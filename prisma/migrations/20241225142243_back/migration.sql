@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Driver" ALTER COLUMN "tId" SET DATA TYPE TEXT;
