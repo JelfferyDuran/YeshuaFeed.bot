@@ -1,0 +1,192 @@
+{
+  "actions": [
+    {
+      "name": "scroll",
+      "description": "Delivers today\u2019s devotional scroll: Scripture, meditation, action step, and whisper from Yeshua.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string",
+            "description": "Optional day override (e.g., Monday, 2025-07-04)"
+          }
+        }
+      }
+    },
+    {
+      "name": "ask",
+      "description": "Ask any question about the Bible or teachings of Yeshua and receive a scripture-rooted answer.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "The question the user wants to ask"
+          }
+        },
+        "required": [
+          "question"
+        ]
+      }
+    },
+    {
+      "name": "blessme",
+      "description": "Receive a personalized prophetic blessing and a related scripture verse.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "decode",
+      "description": "Decode a word, number, name, or Hebrew root and get SOD/gematria/Biblical meaning.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "term": {
+            "type": "string",
+            "description": "The word, name, or number to decode"
+          }
+        },
+        "required": [
+          "term"
+        ]
+      }
+    },
+    {
+      "name": "crosslink",
+      "description": "Searches and returns cross-referenced scriptures across the Bible on a topic.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "string",
+            "description": "The biblical theme or keyword to crosslink"
+          }
+        },
+        "required": [
+          "topic"
+        ]
+      }
+    },
+    {
+      "name": "whisper",
+      "description": "Returns a personal, spiritual whisper from Yeshua for encouragement or confirmation.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "mood": {
+            "type": "string",
+            "description": "Optional emotion or state of mind (e.g., anxious, tired, hopeful)"
+          }
+        }
+      }
+    },
+    {
+      "name": "reveal",
+      "description": "Uncovers the mystical or quantum-level meaning of a spiritual topic or symbol.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "string",
+            "description": "Spiritual symbol, object, or mystery to reveal (e.g., fig tree, oil, breath)"
+          }
+        },
+        "required": [
+          "topic"
+        ]
+      }
+    },
+    {
+      "name": "teachme",
+      "description": "Teaches on a Kingdom topic with scripture references and practical steps.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "string",
+            "description": "Topic to learn about (e.g., fasting, prayer, deliverance)"
+          }
+        },
+        "required": [
+          "topic"
+        ]
+      }
+    },
+    {
+      "name": "lightcode",
+      "description": "Generates a scripture-based frequency mantra to speak or meditate on for alignment.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "focus": {
+            "type": "string",
+            "description": "Spiritual goal or healing target (e.g., identity, clarity, strength)"
+          }
+        }
+      }
+    },
+    {
+      "name": "torahportion",
+      "description": "Returns the current week's Torah portion with prophetic insight through Messiah's lens.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "pray",
+      "description": "Generates a prayer based on user\u2019s current need or emotion.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "intention": {
+            "type": "string",
+            "description": "The situation or desire the prayer is for (e.g., healing, courage, peace)"
+          }
+        },
+        "required": [
+          "intention"
+        ]
+      }
+    },
+    {
+      "name": "fasttrack",
+      "description": "Guides user through a 1, 3, or 7-day spiritual fast with daily instructions.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "duration": {
+            "type": "string",
+            "enum": [
+              "1-day",
+              "3-day",
+              "7-day"
+            ],
+            "description": "Length of the fast"
+          }
+        },
+        "required": [
+          "duration"
+        ]
+      }
+    },
+    {
+      "name": "remindme",
+      "description": "Sends a daily reminder scripture or whisper from Yeshua.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "time": {
+            "type": "string",
+            "description": "Time of day to receive reminder (e.g., 7am, 9pm)"
+          }
+        },
+        "required": [
+          "time"
+        ]
+      }
+    }
+  ]
+}
